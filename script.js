@@ -38,6 +38,7 @@ function firstNameError() {
         inputFirstName.style.border = "2px solid var(--red)";
         inputFirstName.placeholder = '';
         error[0].textContent = "First Name cannot be empty";
+        inputFirstName.className = 'imgInput';
     }
 };
 
@@ -46,6 +47,7 @@ function lastNameError() {
         inputLastName.style.border = "2px solid var(--red)";
         inputLastName.placeholder = '';
         error[1].textContent = "Last Name cannot be empty";
+        inputLastName.className = 'imgInput';
     }
 };
 
@@ -54,10 +56,12 @@ function emailError() {
         inputEmail.style.border = "2px solid var(--red)";
         inputEmail.placeholder = '';
         error[2].textContent = "Email cannot be empty";
+        inputEmail.className = "imgInput";
     } else if(inputEmail.validity.typeMismatch) {
         inputEmail.style.border = "2px solid var(--red)";
         inputEmail.placeholder = '';
         error[2].textContent = "Entered value needs to be an email";
+        inputEmail.className = "imgInput";
     }
 };
 
@@ -66,10 +70,12 @@ function passwordError() {
         inputPassWord.style.border = "2px solid var(--red)";
         inputPassWord.placeholder = '';
         error[3].textContent = "Password cannot be empty";
+        inputPassWord.className = 'imgInput';
     } else if(inputPassWord.validity.patternMismatch) {
         inputPassword.style.border = "2px solid var(--red)";
         inputPassWord.placeholder = '';
-        error[3].textContent = "Password must contain at least one lowercase, uppercase and a number"
+        error[3].textContent = "Password must contain at least one lowercase, uppercase and a number";
+        inputPassWord.className = 'imgInput';
     }
 }
 
