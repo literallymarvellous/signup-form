@@ -101,6 +101,12 @@ input, button {
     font-weight: 600;
 }
 
+.imgInput {
+    background-image: url(images/icon-error.svg);
+    background-repeat: no-repeat;
+    background-position:  97% 50%;
+}
+
 button {
     background-color: var(--green);
     text-transform: uppercase;
